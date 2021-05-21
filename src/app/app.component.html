@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="col-12">
+        <!-- <div class="myblock" (mousemove) = "getCords($event)"></div>
+        <p>X: {{blockX}}   y: {{blockY}}  </p>
+         -->
+        <div class="jumbotron">
+            <h1 class="display-3">Заметки</h1>
+            <p class="lead">Это форма для создания заметки, запишите имя заметки и её содержание и нажмите кнопку
+                "Добавить заметку", для очистки формы используйте соответствующую кнопку</p>
+            <hr class="my-2">
+            <p><input type="text" class="form-control" placeholder="Название" aria-label=""
+                    aria-describedby="basic-addon1" #inputName ></p>
+            <p> <textarea cols="142" rows="10"></textarea></p>
+            <p class="lead">
+                <a name="Текст заметки" class="btn btn-primary btn-lg" href="#" role="button" (click) = "addCard()">Добавить заметку</a>
+                <a name="Текст заметки" class="btn btn-primary btn-lg" href="#" role="button" style="margin-left: 20px;">Очистить форму</a>
+            </p>
+        </div>
+        <div *ngFor="let item of card">
+            {{ item.name }}
+        </div>
+
+
+    </div>
+</div>
